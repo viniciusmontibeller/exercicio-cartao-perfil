@@ -1,0 +1,70 @@
+body{
+    background-color: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.card{
+    background-color: #ffffff;
+    width: 250px;
+    height: 260px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card .container-imagem {
+    width: 75px;
+    height: 75px;
+    overflow: hidden;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.card .container-imagem img{
+    width: 100%;
+}
+
+
+.card .informacao-pessoal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-grow: 2;
+    border-bottom: 2px solid hsl(227, 10%, 46%, .3);
+}
+
+.card .informacao-social{
+    flex-grow: 1;
+}
+
+.card .informacao-social .dados-sociais{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+
+.informacao-social .dados-sociais li{
+    text-align: center;
+    
+}
+
+.informacao-pessoal .pais-origem, .informacao-pessoal .nome-e-idade .idade, .informacao-social .dados-sociais .tipo-social{
+    color: hsl(227, 10%, 46%);
+}
+
+.informacao-pessoal .nome-e-idade, .informacao-social .dados-sociais .quantidade-social{
+    font-weight: 700;
+}
